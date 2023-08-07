@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC CALCULATOR</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <center>
+        <u>
+        <h1>BASIC CALCULATOR</h1></u>
+    </center>
+
+    <div class="wrapper">
+        <form name="cal">
+            <center><input type="text" name="display" class="paral" placeholder="WELL COME TO AMAN CALCULATOR">
+            </center>
+            <br>
+            <div class="button-box">
+                <center>
+                    <table border=" ">
+                        <tr>
+                            <th><input type="button" value="7" onclick="cal.display.value+='7'"></th>
+                            <th><input type="button" value="8" onclick="cal.display.value+='8'"></th>
+                            <th><input type="button" value="9" onclick="cal.display.value+='9'"></th>
+                            <th><input type="button" value="+" onclick="cal.display.value+='+'"></th>
+                        </tr>
+                        <tr>
+                            <th><input type="button" value="4" onclick="cal.display.value+='4'"></th>
+                            <th> <input type="button" value="5" onclick="cal.display.value+='5'"></th>
+                            <th><input type="button" value="6" onclick="cal.display.value+='6'"></th>
+                            <th><input type="button" value="-" onclick="cal.display.value+='-'"></th>
+                        </tr>
+                        <tr>
+                            <th><input type="button" value="1" onclick="cal.display.value+='1'"></th>
+                            <th><input type="button" value="2" onclick="cal.display.value+='2'"></th>
+                            <th><input type="button" value="3" onclick="cal.display.value+='3'"></th>
+                            <th><input type="button" value="*" onclick="cal.display.value+='*'"></th>
+                        </tr>
+                        <tr>
+                            <th><input type="button" value="C" onclick="cal.display.value+='c'"></th>
+                            <th><input type="button" value="0" onclick="cal.display.value+='0'"></th>
+                            <th><input type="button" value="/" onclick="cal.display.value+='/'"></th>
+                            <th><input type="button" value="=" onclick="cal.display.value = eval(cal.display.value)"></th>
+                        </tr>
+                    </table>
+                </center>
+        </form>
+        </div>
+
+</body>
+
+</html>
